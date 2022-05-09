@@ -25,8 +25,10 @@ export function Memo() {
     return (
         <div>
             <Title hook='React.memo' />
-            <div>{value}</div>
-            <Dummie />
+            <div style={{ display: 'none' }}>
+                <div>{value}</div>
+                <Dummie />
+            </div>
             <DetailMemo text={state ? 'prop' : 'other prop'} />
             <button type='button' onClick={() => setState(prev => !prev)}>{String(state) + ' props'}</button>
             <button type='button' onClick={() => setValue(prev => prev + 1)}>{String(value) + ' value'}</button>

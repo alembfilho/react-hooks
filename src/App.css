@@ -1,0 +1,27 @@
+.App {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 50px;
+}
+
+
+div.dark {
+  background-color: #282c34;
+  color: white;
+}
+
+span.dark {
+  color: aqua;
+}
+
+span {
+  color: blue;
+}
+
+.factorial {
+  display: flex;
+  gap: 1em;
+  padding: 1em 0;
+}
